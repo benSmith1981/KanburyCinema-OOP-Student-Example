@@ -41,6 +41,12 @@
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
             this.pictureBoxMovie = new System.Windows.Forms.PictureBox();
+            this.Register = new System.Windows.Forms.Button();
+            this.userName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.password = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Login = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMovie)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +73,7 @@
             // labelRunningTime
             // 
             this.labelRunningTime.AutoSize = true;
-            this.labelRunningTime.Location = new System.Drawing.Point(64, 448);
+            this.labelRunningTime.Location = new System.Drawing.Point(119, 431);
             this.labelRunningTime.Name = "labelRunningTime";
             this.labelRunningTime.Size = new System.Drawing.Size(76, 13);
             this.labelRunningTime.TabIndex = 2;
@@ -75,14 +81,14 @@
             // 
             // textBoxRunningTime
             // 
-            this.textBoxRunningTime.Location = new System.Drawing.Point(177, 459);
+            this.textBoxRunningTime.Location = new System.Drawing.Point(214, 428);
             this.textBoxRunningTime.Name = "textBoxRunningTime";
             this.textBoxRunningTime.Size = new System.Drawing.Size(120, 20);
             this.textBoxRunningTime.TabIndex = 3;
             // 
             // textBoxMainStar
             // 
-            this.textBoxMainStar.Location = new System.Drawing.Point(153, 406);
+            this.textBoxMainStar.Location = new System.Drawing.Point(214, 402);
             this.textBoxMainStar.Name = "textBoxMainStar";
             this.textBoxMainStar.Size = new System.Drawing.Size(92, 20);
             this.textBoxMainStar.TabIndex = 5;
@@ -90,7 +96,7 @@
             // labelMainStar
             // 
             this.labelMainStar.AutoSize = true;
-            this.labelMainStar.Location = new System.Drawing.Point(45, 409);
+            this.labelMainStar.Location = new System.Drawing.Point(119, 409);
             this.labelMainStar.Name = "labelMainStar";
             this.labelMainStar.Size = new System.Drawing.Size(55, 13);
             this.labelMainStar.TabIndex = 4;
@@ -98,7 +104,7 @@
             // 
             // textBoxDirector
             // 
-            this.textBoxDirector.Location = new System.Drawing.Point(177, 371);
+            this.textBoxDirector.Location = new System.Drawing.Point(214, 371);
             this.textBoxDirector.Name = "textBoxDirector";
             this.textBoxDirector.Size = new System.Drawing.Size(120, 20);
             this.textBoxDirector.TabIndex = 7;
@@ -106,7 +112,7 @@
             // labelDirector
             // 
             this.labelDirector.AutoSize = true;
-            this.labelDirector.Location = new System.Drawing.Point(30, 374);
+            this.labelDirector.Location = new System.Drawing.Point(119, 378);
             this.labelDirector.Name = "labelDirector";
             this.labelDirector.Size = new System.Drawing.Size(47, 13);
             this.labelDirector.TabIndex = 6;
@@ -114,7 +120,7 @@
             // 
             // textBoxCertificate
             // 
-            this.textBoxCertificate.Location = new System.Drawing.Point(138, 345);
+            this.textBoxCertificate.Location = new System.Drawing.Point(214, 345);
             this.textBoxCertificate.Name = "textBoxCertificate";
             this.textBoxCertificate.Size = new System.Drawing.Size(120, 20);
             this.textBoxCertificate.TabIndex = 9;
@@ -122,7 +128,7 @@
             // labelCertificate
             // 
             this.labelCertificate.AutoSize = true;
-            this.labelCertificate.Location = new System.Drawing.Point(64, 352);
+            this.labelCertificate.Location = new System.Drawing.Point(119, 348);
             this.labelCertificate.Name = "labelCertificate";
             this.labelCertificate.Size = new System.Drawing.Size(57, 13);
             this.labelCertificate.TabIndex = 8;
@@ -130,7 +136,7 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(106, 300);
+            this.textBoxName.Location = new System.Drawing.Point(214, 319);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(120, 20);
             this.textBoxName.TabIndex = 11;
@@ -138,7 +144,7 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(30, 300);
+            this.labelName.Location = new System.Drawing.Point(119, 319);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(70, 13);
             this.labelName.TabIndex = 10;
@@ -147,18 +153,79 @@
             // pictureBoxMovie
             // 
             this.pictureBoxMovie.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxMovie.Image = global::KanburyCinema.Properties.Resources.creed2;
             this.pictureBoxMovie.Location = new System.Drawing.Point(122, 12);
             this.pictureBoxMovie.Name = "pictureBoxMovie";
             this.pictureBoxMovie.Size = new System.Drawing.Size(246, 301);
             this.pictureBoxMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMovie.TabIndex = 12;
             this.pictureBoxMovie.TabStop = false;
+            this.pictureBoxMovie.Click += new System.EventHandler(this.pictureBoxMovie_Click);
+            // 
+            // Register
+            // 
+            this.Register.Location = new System.Drawing.Point(555, 244);
+            this.Register.Name = "Register";
+            this.Register.Size = new System.Drawing.Size(75, 23);
+            this.Register.TabIndex = 13;
+            this.Register.Text = "Register";
+            this.Register.UseVisualStyleBackColor = true;
+            this.Register.Click += new System.EventHandler(this.Register_Click);
+            // 
+            // userName
+            // 
+            this.userName.Location = new System.Drawing.Point(539, 122);
+            this.userName.Name = "userName";
+            this.userName.Size = new System.Drawing.Size(120, 20);
+            this.userName.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(444, 122);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Username";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // password
+            // 
+            this.password.Location = new System.Drawing.Point(539, 166);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(120, 20);
+            this.password.TabIndex = 17;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(444, 166);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Password";
+            // 
+            // Login
+            // 
+            this.Login.Location = new System.Drawing.Point(555, 204);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(75, 23);
+            this.Login.TabIndex = 18;
+            this.Login.Text = "Login";
+            this.Login.UseVisualStyleBackColor = true;
+            this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 527);
+            this.ClientSize = new System.Drawing.Size(742, 527);
+            this.Controls.Add(this.Login);
+            this.Controls.Add(this.password);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.userName);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Register);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.textBoxCertificate);
@@ -196,6 +263,12 @@
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.PictureBox pictureBoxMovie;
+        private System.Windows.Forms.Button Register;
+        private System.Windows.Forms.TextBox userName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button Login;
     }
 }
 
