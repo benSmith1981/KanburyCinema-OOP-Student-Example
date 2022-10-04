@@ -30,9 +30,9 @@ namespace KanburyCinema
             set { name = value; }
         }
 
-        publice string Certificate
+        public string Certificate
         {
-            get { return certificate }
+            get { return certificate; }
 
             set { certificate = value; }
         }
@@ -41,7 +41,7 @@ namespace KanburyCinema
         {
             get { return director; }
 
-            set { director = valve; }
+            set { director = value; }
         }
 
         public string MainStar
@@ -51,7 +51,7 @@ namespace KanburyCinema
             set { director = value; }
         }
 
-        public string RunningTime
+        public int RunningTime
         {
             get { return runningTime; }
 
